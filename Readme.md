@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Оськин Сергей](https://up.htmlacademy.ru/adaptive-individual/2/user/2592937).
-* Наставник: `Неизвестно`.
+* Наставник: [Остаповец Сергей](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
