@@ -5,18 +5,24 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/152.png">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="#">
       <picture>
-        <img class="logo__image" src="#" width="33" height="38" alt="Логотип Cat Energy">
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+        <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
       </picture>
       <picture>
-        <img class="logo__name" src="#" width="101" height="18" alt="Название бренда Cat Energy">
+        <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/name-logo.svg">
+        <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/name-logo.svg">
+        <img class="logo__name" src="images/name-logo.svg" width="101" height="18" alt="Название бренда Cat Energy">
       </picture>
     </a>
     <nav class="main-nav">
@@ -41,7 +47,7 @@
       <div class="promo__wrapper">
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
-        <a class="promo__button button" href="#">Подобрать программу</a>
+        <a class="promo__button" href="#">Подобрать программу</a>
       </div>
     </section>
     <section class="programs">
@@ -88,10 +94,14 @@
       <p class="example__cost">Затраты на питание: <span>15 000 руб.</span></p>
       <div class="example__images-wrapper">
         <picture>
-          <img class="example__image example__image--before" src="#" width="280" height="256" alt="Толстый кот">
+          <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
+          <img class="example__image example__image--before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
         </picture>
         <picture>
-          <img class="example__image example__image--after" src="#" width="280" height="256" alt="Худой кот">
+          <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
+          <img class="example__image example__image--after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
         </picture>
       </div>
     </section>
@@ -103,36 +113,40 @@
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="contacts__map">
-        <img src="#" width="320" height="362" alt="Карта проезда к офису Cat Energy">
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта проезда к офису Cat Energy">
+        </picture>
       </div>
     </section>
     <div class="footer__wrapper">
       <a class="footer__logo" href="#">
-        <img src="#" width="128" height="24" alt="Cat Energy">
+        <img src="images/name-logo.svg" width="128" height="24" alt="Cat Energy">
       </a>
       <ul class="footer__social social">
         <li class="social__item">
           <a class="social__link" href="#">
-            <img src="#" width="28" height="22" alt="Вконтакте">
+            <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
-            <img src="#" width="28" height="22" alt="Ютуб">
+            <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
-            <img src="#" width="28" height="22" alt="Телеграм">
+            <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
       </ul>
       <a class="footer__academy academy" href="#">
-        HTML Academy
-        <img class="academy__logo" src="#" width="27" height="34" alt="Логотип HTML Academy">
+        <span>HTML Academy</span>
       </a>
     </div>
   </footer>
 </body>
+<script src="scripts/index.js" defer></script>
 
 </html>
