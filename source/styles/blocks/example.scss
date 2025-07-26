@@ -1,0 +1,58 @@
+.example {
+  background-color: $bg-basic-grey;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-family: $secondary-font;
+  color: $dark-color-text;
+}
+
+.example__text {
+  color: $base-color-text;
+}
+
+.example__stats {
+
+}
+
+.example__label {
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $primary-font;
+  color: $base-color-text;
+  text-transform: uppercase;
+}
+
+.example__value {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $secondary-font;
+  color: $dark-color-text;
+  text-transform: uppercase;
+}
+
+.example__cost {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $secondary-font;
+  color: $dark-color-text;
+  text-transform: uppercase;
+}
+
+.example__images-wrapper {
+
+}
+
+.example__image {
+
+}
+
+.example__image--before {
+
+}
+
+.example__image--after {
+
+}
