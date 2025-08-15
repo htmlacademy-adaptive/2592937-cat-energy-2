@@ -17,16 +17,52 @@
 
 }
 
-.advantages__item--leaf {
-
+.advantages__item--leaf::before {
+  content: "";
+  display: inline-block;
+  background-color: $bg-basic-green;
+  background-image: url("../icons/icon-leaf.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-size: 36px 50px;
+  width: 36px;
+  height: 50px;
 }
 
-.advantages__item--powder {
-
+.advantages__item--powder::before {
+  content: "";
+  display: inline-block;
+  background-color: $bg-basic-green;
+  background-image: url("../icons/powder.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-size: 36px 50px;
+  width: 36px;
+  height: 50px;
 }
 
-.advantages__item--meal {
+.advantages__item--meal::before {
+  content: "";
+  display: inline-block;
+  background-color: $bg-basic-green;
+  background-image: url("../icons/icon-meal.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-size: 36px 50px;
+  width: 36px;
+  height: 50px;
+}
 
+.advantages__item--clock::before {
+  content: "";
+  display: inline-block;
+  background-color: $bg-basic-green;
+  background-image: url("../icons/icon-clock.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-size: 36px 50px;
+  width: 36px;
+  height: 50px;
 }
 
 .advantages__text {

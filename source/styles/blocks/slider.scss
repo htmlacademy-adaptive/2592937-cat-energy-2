@@ -1,0 +1,45 @@
+.slider {
+  position: relative;
+}
+
+.slider-button {
+  cursor: pointer;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -2px;
+}
+
+.slider-button::before {
+  content: "";
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-button::after {
+  content: "";
+  display: block;
+  background-color: #666666;
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mask-image: url("../icons/slider-arrows.svg");
+  mask-size: 24px 18px;
+  mask-repeat: no-repeat;
+}
