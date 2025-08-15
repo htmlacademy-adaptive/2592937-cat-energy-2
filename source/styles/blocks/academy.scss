@@ -1,3 +1,14 @@
 .academy {
 
 }
+
+.academy::before {
+  content: "";
+  background-image: url("../icons/icon-academy.svg");
+  background-repeat: no-repeat;
+  background-size: 27px 34px;
+  border: none;
+  width: 27px;
+  height: 34px;
+  display: block;
+}

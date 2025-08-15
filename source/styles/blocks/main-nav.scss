@@ -3,7 +3,23 @@
 }
 
 .main-nav__toggle {
+  background-color: #ffffff;
+  background-image: url("../icons/nav-toggle.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+}
 
+.main-nav__toggle--close {
+  background-color: #ffffff;
+  background-image: url("../icons/close-icon.svg");
+  background-repeat: no-repeat;
+  border: none;
+  background-size: 18px 18px;
+  width: 18px;
+  height: 18px;
 }
 
 .main-nav__wrapper {
