@@ -4,11 +4,9 @@
 
 .academy::before {
   content: "";
-  background-image: url("../icons/icon-academy.svg");
-  background-repeat: no-repeat;
-  background-size: 27px 34px;
-  border: none;
+  display: block;
   width: 27px;
   height: 34px;
-  display: block;
+
+  @include icon-bg("../icons/icon-academy.svg");
 }
