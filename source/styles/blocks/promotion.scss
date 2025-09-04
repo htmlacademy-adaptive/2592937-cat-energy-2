@@ -1,5 +1,8 @@
 .promotion {
-
+  background-image: url("../images/cat-case-background-mobile@1x.png");
+  background-repeat: no-repeat;
+  min-height: 290px;
+  background-size: cover;
 }
 
 .promotion__description {
@@ -7,4 +10,11 @@
   line-height: 20px;
   font-family: $primary-font;
   color: $white-color-text;
+}
+
+.promotion__description::before {
+  content: "";
+  display: block;
+
+  @include icon-bg("../icons/icon-gift.svg");
 }

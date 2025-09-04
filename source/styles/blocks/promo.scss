@@ -1,9 +1,16 @@
 .promo {
+  background-size: 100%;
+  background-image: linear-gradient(to top, #ffffff 178px, rgba(104, 183, 56, 0.85) 178px), url("/images/cat-background-mobile@1x.png");
+  background-repeat: no-repeat;
 
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background: 0 0;
+  }
 }
 
 .promo__wrapper {
-  background-color: $bg-basic-green;
+  min-width: 320px;
 }
 
 .promo__title {
@@ -11,6 +18,15 @@
   line-height: 36px;
   font-family: $secondary-font;
   color: $white-color-text;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 424px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $dark-color-text;
+    text-align: left;
+  }
 }
 
 .promo__text {
@@ -19,8 +35,31 @@
   font-family: $secondary-font;
   color: $white-color-text;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $dark-color-text;
+    text-align: left;
+  }
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+  }
 }
 
 .promo__button {
+  width: 100%;
 
+  @media (min-width: $tablet-width) {
+    width: 242px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }

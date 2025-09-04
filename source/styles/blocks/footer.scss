@@ -1,5 +1,13 @@
 .footer {
+  min-width: 320px;
 
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+  }
 }
 
 .footer__contacts {
@@ -8,17 +16,41 @@
 
 .footer__wrapper {
   background-color: $bg-basic-grey;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footer__logo {
+  margin: 0 auto;
+  background-color: $bg-basic-grey;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.footer__logo--img {
+  background-color: $bg-basic-grey;
 }
 
 .footer__social {
   list-style-type: none;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .footer__academy {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  min-width: 113px;
   font-size: 16px;
   line-height: 20px;
   font-family: $primary-font;

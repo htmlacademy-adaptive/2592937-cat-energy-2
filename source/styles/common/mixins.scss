@@ -7,3 +7,27 @@
     src: $font-src;
   }
 }
+
+@mixin button {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $secondary-font;
+  color: $white-color-text;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $bg-basic-green;
+}
+
+@mixin icon-bg($image-url, $size: cover, $color: null) {
+  background-color: $color;
+  background-image: url($image-url);
+  background-repeat: no-repeat;
+  border: none;
+  background-size: $size;
+
+  @if $color != null {
+    background-color: $color;
+  }
+}

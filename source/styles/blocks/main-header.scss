@@ -1,7 +1,33 @@
 .main-header {
+  min-width: 320px;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.main-header::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 694px;
+    left: 50%;
+    right: 0;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("/images/cat-background-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+  }
 }
 
 .main-header__logo {
-
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
