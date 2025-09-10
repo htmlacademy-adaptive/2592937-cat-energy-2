@@ -40,6 +40,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   mask-image: url("../icons/slider-arrows.svg");
-  mask-size: 24px 18px;
+  mask-size: cover;
   mask-repeat: no-repeat;
 }

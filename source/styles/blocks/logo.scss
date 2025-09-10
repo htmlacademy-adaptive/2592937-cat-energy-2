@@ -7,5 +7,14 @@
 }
 
 .logo__name {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
 
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 73px;
+    right: auto;
+  }
 }

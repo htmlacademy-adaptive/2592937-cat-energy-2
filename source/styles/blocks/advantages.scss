@@ -1,5 +1,13 @@
 .advantages {
+  min-width: 320px;
 
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+  }
 }
 
 .advantages__title {
@@ -7,64 +15,104 @@
   line-height: 40px;
   font-family: $secondary-font;
   color: $dark-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .advantages__item {
+  position: relative;
 
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    min-width: 60px;
+    min-height: 60px;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    background: $bg-basic-green;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
 }
 
-.advantages__item--leaf::before {
+.advantages__item--leaf::after {
   content: "";
-  display: inline-block;
-  background-color: $bg-basic-green;
-  background-image: url("../icons/icon-leaf.svg");
-  background-repeat: no-repeat;
-  border: none;
-  background-size: 36px 50px;
-  width: 36px;
-  height: 50px;
+  display: block;
+
+  @include icon-bg("../icons/icon-leaf.svg", 30px 32px);
 }
 
-.advantages__item--powder::before {
+.advantages__item--powder::after {
   content: "";
-  display: inline-block;
-  background-color: $bg-basic-green;
-  background-image: url("../icons/powder.svg");
-  background-repeat: no-repeat;
-  border: none;
-  background-size: 36px 50px;
-  width: 36px;
-  height: 50px;
+  display: block;
+
+  @include icon-bg("../icons/powder.svg", 26px 28px);
 }
 
-.advantages__item--meal::before {
+.advantages__item--meal::after {
   content: "";
-  display: inline-block;
-  background-color: $bg-basic-green;
-  background-image: url("../icons/icon-meal.svg");
-  background-repeat: no-repeat;
-  border: none;
-  background-size: 36px 50px;
-  width: 36px;
-  height: 50px;
+  display: block;
+
+  @include icon-bg("../icons/icon-meal.svg", 25px 30px);
 }
 
-.advantages__item--clock::before {
+.advantages__item--clock::after {
   content: "";
-  display: inline-block;
-  background-color: $bg-basic-green;
-  background-image: url("../icons/icon-clock.svg");
-  background-repeat: no-repeat;
-  border: none;
-  background-size: 36px 50px;
-  width: 36px;
-  height: 50px;
+  display: block;
+
+  @include icon-bg("../icons/icon-clock.svg", 26px 31px);
+}
+
+.advantages__item--step {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      content: attr(data-step);
+      position: absolute;
+      font-family: "Osvald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: $bg-basic-grey;
+      width: 135px;
+      text-align: center;
+    }
+  }
 }
 
 .advantages__text {
+  margin: 0;
   color: $base-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

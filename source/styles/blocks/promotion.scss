@@ -14,10 +14,7 @@
 
 .promotion__description::before {
   content: "";
-  background-image: url("../icons/icon-gift.svg");
-  background-repeat: no-repeat;
-  background-size: 78px 80px;
-  width: 78px;
-  height: 80px;
   display: block;
+
+  @include icon-bg("../icons/icon-gift.svg");
 }

@@ -1,5 +1,28 @@
 .example {
+  min-width: 320px;
   background-color: $bg-basic-grey;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.example__container {
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
+  }
 }
 
 .example__title {
@@ -7,14 +30,41 @@
   line-height: 40px;
   font-family: $secondary-font;
   color: $dark-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__text {
   color: $base-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__statistics {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .example__stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
+.example__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .example__label {
@@ -23,6 +73,11 @@
   font-family: $primary-font;
   color: $base-color-text;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__value {
@@ -31,6 +86,11 @@
   font-family: $secondary-font;
   color: $dark-color-text;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__cost {
@@ -39,6 +99,19 @@
   font-family: $secondary-font;
   color: $dark-color-text;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 327px;
+  }
 }
 
 .example__images-wrapper {

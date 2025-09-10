@@ -1,8 +1,13 @@
 .main-nav {
-
+  position: relative;
+  text-align: center;
 }
 
 .main-nav__toggle {
+  display: block;
+  position: absolute;
+  top: -40px;
+  right: 20px;
   background-color: #ffffff;
   background-image: url("../icons/nav-toggle.svg");
   background-repeat: no-repeat;
@@ -12,20 +17,18 @@
   height: 24px;
 }
 
-.main-nav__toggle--close {
-  background-color: #ffffff;
-  background-image: url("../icons/close-icon.svg");
-  background-repeat: no-repeat;
-  border: none;
-  background-size: 18px 18px;
-  width: 18px;
-  height: 18px;
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
 
-.main-nav__wrapper {
-
+.main-nav__toggle--close {
+  @include icon-bg("../icons/close-icon.svg");
 }
 
 .main-nav__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
