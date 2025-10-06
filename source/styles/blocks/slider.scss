@@ -1,5 +1,36 @@
 .slider {
   position: relative;
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.slider__wrapper {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__image {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.slider__image--before {
+  left: 0;
+}
+
+.slider__image--after {
+  right: 0;
 }
 
 .slider-button {
@@ -13,33 +44,54 @@
   display: block;
   position: absolute;
   top: 0;
-  left: -2px;
-}
+  left: 138px;
+  z-index: 10;
 
-.slider-button::before {
-  content: "";
-  background-color: #ffffff;
-  border: 2px solid #666666;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  &::before {
+    content: "";
+    background-color: #ffffff;
+    border: 2px solid #666666;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.slider-button::after {
-  content: "";
-  display: block;
-  background-color: #666666;
-  width: 24px;
-  height: 18px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  mask-image: url("../icons/slider-arrows.svg");
-  mask-size: cover;
-  mask-repeat: no-repeat;
+  &::after {
+    content: "";
+    display: block;
+    background-color: #666666;
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mask-image: url("../icons/slider-arrows.svg");
+    mask-size: cover;
+    mask-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: #68b738;
+
+    &:hover::after {
+      background-color: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:hover::before {
+    border-color: #68b738;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: auto;
+  }
 }

@@ -6,10 +6,9 @@
 .main-nav__toggle {
   display: block;
   position: absolute;
-  top: -40px;
+  top: -50px;
   right: 20px;
   background-color: #ffffff;
-  background-image: url("../icons/nav-toggle.svg");
   background-repeat: no-repeat;
   border: none;
   background-size: 24px 24px;
@@ -23,8 +22,20 @@
   }
 }
 
+.main-nav__toggle--opened {
+  @include icon-bg("../icons/nav-toggle.svg");
+}
+
 .main-nav__toggle--close {
   @include icon-bg("../icons/close-icon.svg");
+}
+
+.main-nav__wrapper {
+  display: none;
+}
+
+.main-nav--opened .main-nav__wrapper {
+  display: block;
 }
 
 .main-nav__list {

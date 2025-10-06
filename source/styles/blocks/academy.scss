@@ -1,12 +1,19 @@
 .academy {
+  &::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
 
+    @include icon-bg("../icons/icon-academy.svg");
+  }
+
+  &:hover::before,
+  &:focus::before {
+    @include icon-bg("../icons/icon-academy-focus.svg");
+  }
 }
 
-.academy::before {
-  content: "";
-  display: block;
-  width: 27px;
-  height: 34px;
+.academy span {
 
-  @include icon-bg("../icons/icon-academy.svg");
 }

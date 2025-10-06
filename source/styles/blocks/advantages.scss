@@ -1,24 +1,37 @@
 .advantages {
   min-width: 320px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
+    padding: 0 30px;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
+    margin: 0 auto 70px;
+    padding: 0 110px;
+    border: none;
   }
 }
 
 .advantages__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-size: 36px;
   line-height: 40px;
   font-family: $secondary-font;
   color: $dark-color-text;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
   }
 }
 
@@ -29,80 +42,51 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
+    gap: 37px 153px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
   }
 }
 
 .advantages__item {
+  min-height: 60px;
   position: relative;
+  padding-top: 2px;
+  padding-left: 80px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     min-height: 280px;
+    padding: 0;
+    margin: 0;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    min-width: 60px;
-    min-height: 60px;
-    background-size: contain;
-    top: 0;
-    left: 0;
-    background: $bg-basic-green;
-    background-position: center;
-
-    @media (min-width: $tablet-width) {
-      width: 80px;
-      height: 80px;
-    }
+  @media (min-width: $desktop-width) {
+    min-height: 240px;
   }
 }
 
-.advantages__item--leaf::after {
-  content: "";
-  display: block;
-
-  @include icon-bg("../icons/icon-leaf.svg", 30px 32px);
-}
-
-.advantages__item--powder::after {
-  content: "";
-  display: block;
-
-  @include icon-bg("../icons/powder.svg", 26px 28px);
-}
-
-.advantages__item--meal::after {
-  content: "";
-  display: block;
-
-  @include icon-bg("../icons/icon-meal.svg", 25px 30px);
-}
-
-.advantages__item--clock::after {
-  content: "";
-  display: block;
-
-  @include icon-bg("../icons/icon-clock.svg", 26px 31px);
-}
-
-.advantages__item--step {
+.advantages__step {
   @media (min-width: $tablet-width) {
     position: relative;
 
-    &::before {
+    &::after {
       content: attr(data-step);
       position: absolute;
-      font-family: "Osvald", sans-serif;
+      font-family: $secondary-font;
       font-size: 280px;
       line-height: 280px;
       color: $bg-basic-grey;
       width: 135px;
       text-align: center;
+      z-index: -1;
+      top: -38px;
+      left: 113px;
     }
   }
 }
@@ -114,5 +98,53 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    max-width: 250px;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    min-width: 60px;
+    min-height: 60px;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    background-color: $bg-basic-green;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      position: relative;
+      margin-bottom: 31px;
+    }
+  }
+}
+
+.advantages__text--leaf::before {
+  content: "";
+  display: block;
+
+  @include icon-bg("../icons/icon-leaf.svg", 30px 32px);
+}
+
+.advantages__text--powder::before {
+  content: "";
+  display: block;
+
+  @include icon-bg("../icons/powder.svg", 26px 28px);
+}
+
+.advantages__text--meal::before {
+  content: "";
+  display: block;
+
+  @include icon-bg("../icons/icon-meal.svg", 25px 30px);
+}
+
+.advantages__text--clock::before {
+  content: "";
+  display: block;
+
+  @include icon-bg("../icons/icon-clock.svg", 26px 31px);
 }

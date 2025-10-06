@@ -12,6 +12,15 @@
   min-width: 28px;
   min-height: 28px;
   display: block;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-basic-green;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .social__link--vkontakte {

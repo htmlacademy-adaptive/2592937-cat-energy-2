@@ -1,22 +1,14 @@
 .main-header {
-  min-width: 320px;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-  }
 }
 
-.main-header::before {
+.main-header--with-bg::before {
   @media (min-width: $desktop-width) {
     content: "";
     position: absolute;
     z-index: -1;
     height: 694px;
+    top: 0;
     left: 50%;
     right: 0;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("/images/cat-background-desktop@1x.png");
@@ -26,8 +18,42 @@
   }
 }
 
+.main-header__wrapper {
+  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px 0;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
+    padding: 55px 110px 0;
+  }
+}
+
 .main-header__logo {
   display: flex;
   justify-content: space-between;
   position: relative;
+  padding: 14px 20px;
+  border-bottom: 1px solid #d9d9d9;
+
+  &:hover {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
 }

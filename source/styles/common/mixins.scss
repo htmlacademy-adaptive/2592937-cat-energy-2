@@ -18,6 +18,16 @@
   text-transform: uppercase;
   text-align: center;
   background-color: $bg-basic-green;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba($white-color-text, 0.3);
+  }
 }
 
 @mixin icon-bg($image-url, $size: cover, $color: null) {

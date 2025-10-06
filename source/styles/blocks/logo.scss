@@ -9,6 +9,7 @@
 .logo__name {
   position: absolute;
   margin: auto;
+  top: 24px;
   left: 0;
   right: 0;
 
@@ -16,5 +17,10 @@
     position: absolute;
     left: 73px;
     right: auto;
+    top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 85px;
   }
 }
