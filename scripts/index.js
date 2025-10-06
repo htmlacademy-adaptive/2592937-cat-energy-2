@@ -1,0 +1,1 @@
+var n=document.querySelector(".main-nav"),e=document.querySelector(".main-nav__toggle");n&&e&&e.addEventListener("click",()=>{e.classList.toggle("main-nav__toggle--opened"),e.classList.toggle("main-nav__toggle--close"),n.classList.toggle("main-nav--opened")});
