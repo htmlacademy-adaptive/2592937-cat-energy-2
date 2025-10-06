@@ -1,0 +1,43 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+    src: $font-src;
+  }
+}
+
+@mixin button {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $secondary-font;
+  color: $white-color-text;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $bg-basic-green;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba($white-color-text, 0.3);
+  }
+}
+
+@mixin icon-bg($image-url, $size: cover, $color: null) {
+  background-color: $color;
+  background-image: url($image-url);
+  background-repeat: no-repeat;
+  border: none;
+  background-size: $size;
+
+  @if $color != null {
+    background-color: $color;
+  }
+}

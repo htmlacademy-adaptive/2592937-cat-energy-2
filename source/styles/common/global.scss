@@ -1,1 +1,32 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $primary-font;
+  font-weight: 400;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.button {
+  @include button;
+}
