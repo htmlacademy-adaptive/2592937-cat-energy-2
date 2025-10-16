@@ -10,6 +10,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    margin: 0 auto 80px;
     padding: 0 110px;
   }
 }
@@ -60,10 +62,6 @@
   }
 }
 
-.subscribtion__label {
-
-}
-
 .subscribtion__field {
   margin: 0;
   margin-bottom: 16px;
@@ -82,9 +80,10 @@
 
   &:focus {
     border: 1px solid $dark-color-text;
+    outline: none;
   }
 
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     border: 1px solid #ff8282;
   }
 

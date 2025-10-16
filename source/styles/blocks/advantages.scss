@@ -14,6 +14,7 @@
     padding: 0 110px;
     border: none;
   }
+  counter-reset: step;
 }
 
 .advantages__title {
@@ -47,9 +48,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    gap: 0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 73px;
   }
 }
 
@@ -74,9 +74,13 @@
 .advantages__step {
   @media (min-width: $tablet-width) {
     position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 
     &::after {
-      content: attr(data-step);
+      counter-increment: step;
+      content: counter(step);
       position: absolute;
       font-family: $secondary-font;
       font-size: 280px;
@@ -87,6 +91,7 @@
       z-index: -1;
       top: -38px;
       left: 113px;
+      pointer-events: none;
     }
   }
 }

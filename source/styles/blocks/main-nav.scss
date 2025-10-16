@@ -12,8 +12,8 @@
   background-repeat: no-repeat;
   border: none;
   background-size: 24px 24px;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,6 +32,17 @@
 
 .main-nav__wrapper {
   display: none;
+  position: absolute;
+  top: 100%; /* сразу под хедером */
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: relative;
+    z-index: 0;
+  }
 }
 
 .main-nav--opened .main-nav__wrapper {
@@ -42,4 +53,9 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background: $white-color-text;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
 }

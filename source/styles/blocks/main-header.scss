@@ -1,7 +1,3 @@
-.main-header {
-
-}
-
 .main-header--with-bg::before {
   @media (min-width: $desktop-width) {
     content: "";
