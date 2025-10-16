@@ -26,7 +26,7 @@
           <img class="logo__name" src="images/name-logo.svg" width="101" height="18" alt="Название бренда Cat Energy">
         </picture>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -75,8 +75,8 @@
                   <span class="product-card__value">700 ₽</span>
                 </li>
               </ul>
+              <a class="product-card__button button" href="#">Заказать</a>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__wrapper">
@@ -104,8 +104,8 @@
                   <span class="product-card__value">1000 ₽</span>
                 </li>
               </ul>
+              <a class="product-card__button button" href="#">Заказать</a>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__wrapper">
@@ -133,8 +133,8 @@
                   <span class="product-card__value">700 ₽</span>
                 </li>
               </ul>
+              <a class="product-card__button button" href="#">Заказать</a>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__wrapper">
@@ -162,8 +162,8 @@
                   <span class="product-card__value">1000 ₽</span>
                 </li>
               </ul>
+              <a class="product-card__button button" href="#">Заказать</a>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__wrapper">
@@ -191,8 +191,8 @@
                   <span class="product-card__value">400 ₽</span>
                 </li>
               </ul>
+              <a class="product-card__button button" href="#">Заказать</a>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__wrapper">
@@ -220,8 +220,8 @@
                   <span class="product-card__value">700 ₽</span>
                 </li>
               </ul>
+              <a class="product-card__button button" href="#">Заказать</a>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__wrapper">
@@ -249,10 +249,10 @@
                   <span class="product-card__value">500 ₽</span>
                 </li>
               </ul>
+              <a class="product-card__button button" href="#">Заказать</a>
             </div>
-            <a class="product-card__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog__item product-card product-card__empty">
+          <li class="catalog__item product-card product-card--empty">
             <span class="product-card__cross"></span>
             <h2 class="product-card__title product-card__title--empty">Показать еще 100500 товаров</h2>
             <p class="product-card__description">На самом деле вкусов гораздо больше!</p>
@@ -262,7 +262,7 @@
       </div>
     </section>
     <section class="additional-products">
-      <h2 class="additional-products__title title title__line">Дополнительные товары</h2>
+      <h2 class="additional-products__title title title--line">Дополнительные товары</h2>
       <div class="additional-products__container">
         <div class="additional-products__wrapper">
           <ul class="additional-products__list">
@@ -309,7 +309,7 @@
       </div>
     </section>
     <section class="subscribtion">
-      <h2 class="subscribtion__title title title__line">Акции и новинки</h2>
+      <h2 class="subscribtion__title title title--line">Акции и новинки</h2>
       <div class="subscribtion__wrapper">
         <p class="subscribtion__description">
           Подпишитесь на наши новости и не пропустите ни одного предложения!
@@ -326,14 +326,14 @@
   </main>
   <footer class="footer">
     <section class="footer__contacts contacts">
-      <div class="contacts__wrapper">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="contacts__address">
-          <span>ул. Большая Конюшенная, д. 19/8</span>
-          <span>Санкт-Петербург</span>
-        </address>
-      </div>
       <div class="contacts__map">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <address class="contacts__address">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </address>
+        </div>
         <picture>
           <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
           <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">

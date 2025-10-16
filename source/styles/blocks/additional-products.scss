@@ -10,6 +10,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    margin: 0 auto;
     padding: 0 110px;
     margin-bottom: 96px;
   }
@@ -33,6 +35,7 @@
     display: grid;
     grid-template-columns: auto 245px;
     gap: 80px;
+    align-items: start;
   }
 }
 
