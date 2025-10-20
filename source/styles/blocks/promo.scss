@@ -7,7 +7,6 @@
   @media (min-width: $tablet-width) {
     position: relative;
     background: 0 0;
-    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,7 +36,7 @@
 }
 
 .promo__title {
-  margin: 0 auto 25px;
+  margin: 27px auto 25px;
   text-align: center;
   width: 250px;
   font-size: 36px;
@@ -55,7 +54,7 @@
     line-height: 60px;
     color: $dark-color-text;
     text-align: left;
-    margin-left: 90px;
+    margin-left: 120px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,7 +75,7 @@
     line-height: 20px;
     color: $dark-color-text;
     text-align: left;
-    margin: 0 0 50px 90px;
+    margin: 0 0 50px 120px;
   }
 
   @media (min-width: $desktop-width) {
@@ -105,7 +104,7 @@
     line-height: 26px;
     padding: 14px 24px;
     top: 33%;
-    margin-left: 90px;
+    margin-left: 120px;
   }
 
   @media (min-width: $desktop-width) {
