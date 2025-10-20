@@ -43,7 +43,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 230px));
     gap: 37px 153px;
   }
 

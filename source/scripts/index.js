@@ -1,4 +1,6 @@
 /* в этот файл добавляет скрипты*/
+document.documentElement.classList.remove('no-js');
+document.documentElement.classList.add('js');
 const nav = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
 
