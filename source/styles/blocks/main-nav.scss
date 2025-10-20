@@ -22,11 +22,11 @@
   }
 }
 
-.main-nav__toggle--opened {
+.main-nav__toggle--close {
   @include icon-bg("../icons/nav-toggle.svg");
 }
 
-.main-nav__toggle--close {
+.main-nav__toggle--opened {
   @include icon-bg("../icons/close-icon.svg");
 }
 

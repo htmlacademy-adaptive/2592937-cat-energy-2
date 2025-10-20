@@ -154,7 +154,7 @@
 
 .example__label {
   position: relative;
-  width: 77px;
+  max-width: 77px;
   font-size: 12px;
   line-height: 12px;
   font-family: $primary-font;
@@ -167,7 +167,7 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 1;
-    width: max-content;
+    max-width: 125px;
     background: $white-color-text;
     bottom: -6px;
     padding: 0 8px;

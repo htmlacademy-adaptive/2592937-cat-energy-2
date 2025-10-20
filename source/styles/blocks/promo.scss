@@ -14,7 +14,7 @@
     max-width: 1440px;
     max-height: 573px;
     padding: 0 110px;
-    margin: 0 auto 82px;
+    margin: 0 auto 134px;
   }
 }
 
@@ -22,6 +22,10 @@
   display: flex;
   margin: 0 auto;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .promo__wrapper {
@@ -29,10 +33,6 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 110px;
   }
 }
 
@@ -91,12 +91,6 @@
   @media (width: $tablet-width) {
     position: absolute;
     z-index: -1;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-    top: -280px;
-    left: 110px;
   }
 }
 

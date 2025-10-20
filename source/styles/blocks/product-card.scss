@@ -216,4 +216,10 @@
   font-family: $secondary-font;
   color: $base-color-text;
   background-color: $bg-basic-grey;
+
+  &:active,
+  &:hover {
+    background-color: #ebebeb;
+    color: $base-color-text;
+  }
 }
