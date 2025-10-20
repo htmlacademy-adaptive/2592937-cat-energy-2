@@ -14,7 +14,7 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo logo" href="#">
+      <a class="main-header__logo logo" href="index.html">
         <picture>
           <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
           <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
@@ -262,87 +262,94 @@
       </div>
     </section>
     <section class="additional-products">
-      <h2 class="additional-products__title title title--line">Дополнительные товары</h2>
-      <div class="additional-products__container">
-        <div class="additional-products__wrapper">
-          <ul class="additional-products__list">
-            <li class="additional-products__item goods-card">
-              <h3 class="goods-card__title">Сахарозаменитель</h3>
-              <p class="goods-card__price">
-                <span>1 упаковка (100 г)</span>
-                <span>200 ₽</span>
-              </p>
-              <a class="goods-card__button button" href="#">Заказать</a>
-            </li>
-            <li class="additional-products__item goods-card">
-              <h3 class="goods-card__title">Питьевая вода</h3>
-              <p class="goods-card__price">
-                <span>5 литров</span>
-                <span>50 ₽</span>
-              </p>
-              <a class="goods-card__button button" href="#">Заказать</a>
-            </li>
-            <li class="additional-products__item goods-card">
-              <h3 class="goods-card__title">Молоко</h3>
-              <p class="goods-card__price">
-                <span>1 литр</span>
-                <span>100 ₽</span>
-              </p>
-              <a class="goods-card__button button" href="#">Заказать</a>
-            </li>
-            <li class="additional-products__item goods-card">
-              <h3 class="goods-card__title">Витамины</h3>
-              <p class="goods-card__price">
-                <span>1 упаковка (30 г)</span>
-                <span>300 ₽</span>
-              </p>
-              <a class="goods-card__button button" href="#">Заказать</a>
-            </li>
-          </ul>
-        </div>
-        <div class="additional-products__promotion promotion">
-          <h3 class="visually-hidden">Специальное предложение</h3>
-          <div class="promotion__wrapper">
-            <p class="promotion__description">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
+      <div class="additional-products__box">
+        <h2 class="additional-products__title title title--line">Дополнительные товары</h2>
+        <div class="additional-products__container">
+          <div class="additional-products__wrapper">
+            <ul class="additional-products__list">
+              <li class="additional-products__item goods-card">
+                <h3 class="goods-card__title">Сахарозаменитель</h3>
+                <p class="goods-card__price">
+                  <span>1 упаковка (100 г)</span>
+                  <span>200 ₽</span>
+                </p>
+                <a class="goods-card__button button" href="#">Заказать</a>
+              </li>
+              <li class="additional-products__item goods-card">
+                <h3 class="goods-card__title">Питьевая вода</h3>
+                <p class="goods-card__price">
+                  <span>5 литров</span>
+                  <span>50 ₽</span>
+                </p>
+                <a class="goods-card__button button" href="#">Заказать</a>
+              </li>
+              <li class="additional-products__item goods-card">
+                <h3 class="goods-card__title">Молоко</h3>
+                <p class="goods-card__price">
+                  <span>1 литр</span>
+                  <span>100 ₽</span>
+                </p>
+                <a class="goods-card__button button" href="#">Заказать</a>
+              </li>
+              <li class="additional-products__item goods-card">
+                <h3 class="goods-card__title">Витамины</h3>
+                <p class="goods-card__price">
+                  <span>1 упаковка (30 г)</span>
+                  <span>300 ₽</span>
+                </p>
+                <a class="goods-card__button button" href="#">Заказать</a>
+              </li>
+            </ul>
+          </div>
+          <div class="additional-products__promotion promotion">
+            <h3 class="visually-hidden">Специальное предложение</h3>
+            <div class="promotion__wrapper">
+              <p class="promotion__description">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="subscribtion">
-      <h2 class="subscribtion__title title title--line">Акции и новинки</h2>
-      <div class="subscribtion__wrapper">
-        <p class="subscribtion__description">
-          Подпишитесь на наши новости и не пропустите ни одного предложения!
-        </p>
-        <form class="subscribtion__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="subscribtion__label visually-hidden" for="subscribe-email">
-            Подпишитесь на нашу рассылку
-          </label>
-          <input class="subscribtion__field" placeholder="kuklachev@gmail.com" type="email" name="subscribe-email" id="subscribe-email" required>
-          <button class="subscribtion__button button" type="submit">Подписаться</button>
-        </form>
+      <div class="subscribtion__container">
+        <h2 class="subscribtion__title title title--line">Акции и новинки</h2>
+        <div class="subscribtion__wrapper">
+          <p class="subscribtion__description">
+            Подпишитесь на наши новости и не пропустите ни одного предложения!
+          </p>
+          <form class="subscribtion__form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="subscribtion__label visually-hidden" for="subscribe-email">
+              Подпишитесь на нашу рассылку
+            </label>
+            <input class="subscribtion__field" placeholder="kuklachev@gmail.com" type="email" name="subscribe-email" id="subscribe-email" required>
+            <button class="subscribtion__button button" type="submit">Подписаться</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
     <section class="footer__contacts contacts">
-      <div class="contacts__map">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="contacts__address">
-            <span>ул. Большая Конюшенная, д. 19/8</span>
-            <span>Санкт-Петербург</span>
-          </address>
-        </div>
-        <picture>
-          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-          <img class="contacts__map-img" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта проезда к офису Cat Energy">
-        </picture>
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="contacts__address">
+          <span>ул. Большая Конюшенная, д. 19/8</span>
+          <span>Санкт-Петербург</span>
+        </address>
       </div>
+      <picture>
+        <iframe class="contacts__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198232!2d30.320472477388492!3d59.938719162093484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xc7af30764648c6b1!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINC0LiAxOS84LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1760710283563!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <noscript>
+          <picture>
+            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+            <img class="contacts__map-img" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта проезда к офису Cat Energy">
+          </picture>
+        </noscript>
     </section>
     <div class="footer__wrapper">
-      <a class="footer__logo" href="#">
+      <a class="footer__logo" href="index.html">
         <img class="footer__logo-img" src="images/name-logo.svg" width="128" height="24" alt="Cat Energy">
       </a>
       <ul class="footer__social social">
@@ -362,7 +369,7 @@
           </a>
         </li>
       </ul>
-      <a class="footer__academy academy" href="#">
+      <a class="footer__academy academy" href="https://htmlacademy.ru/intensive/adaptive">
         <span>HTML Academy</span>
       </a>
     </div>
