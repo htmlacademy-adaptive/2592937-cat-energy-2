@@ -71,6 +71,10 @@
 
 .js .main-nav__wrapper {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .js .main-nav--opened .main-nav__wrapper {
