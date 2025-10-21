@@ -24,6 +24,16 @@
   }
 }
 
+.contacts__wrapper--inner {
+  @media (min-width: $tablet-width) {
+    background-color: $bg-basic-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white-color-text;
+  }
+}
+
 .contacts__title {
   margin: 0;
   width: 140px;
