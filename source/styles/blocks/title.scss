@@ -3,12 +3,12 @@
   width: fit-content;
   right: 20px;
   margin: 0;
-  padding: 0 40px 0 20px;
+  padding: 0 0 0 20px;
   background-color: $white-color-text;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
-    padding: 0 40px;
+    padding: 0 30px  0 50px;
     right: 0;
   }
 
@@ -25,10 +25,10 @@
   &::before {
     content: "";
     position: absolute;
-    height: 2px;
+    height: 3px;
     width: 200vw;
     background-color: #68b738;
-    top: 60%;
+    top: 45%;
     z-index: -1;
     left: calc((100vw - 100%) / -2);
   }
