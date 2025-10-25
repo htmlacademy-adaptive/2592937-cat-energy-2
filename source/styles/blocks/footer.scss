@@ -1,5 +1,5 @@
 .footer {
-  background-color: $bg-basic-grey;
+  background-color: #f2f2f2;
 }
 
 .footer__wrapper {
@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 55px 30px;
+    padding: 52px 30px;
     align-items: center;
   }
 
@@ -26,7 +26,7 @@
 
 .footer__logo {
   background-color: $bg-basic-grey;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #d9d9d9;
   text-align: center;
 
@@ -54,7 +54,7 @@
   margin: 0 auto;
   width: 132px;
   list-style-type: none;
-  padding: 20px 0;
+  padding: 18px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -63,12 +63,13 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     border: none;
+    margin: 0 120px 0 160px;
   }
 }
 
 .footer__academy {
   position: relative;
-  padding-top: 20px;
+  padding-top: 18px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -90,7 +91,7 @@
   }
 
   &::after {
-    @media (max-width: $tablet-width) {
+    @media (max-width: 767px) {
       content: "";
       width: 100%;
       height: 1px;
