@@ -21,6 +21,9 @@
     background-color: $white-color-text;
     top: 95px;
     left: 110px;
+    padding-left: 80px;
+    justify-content: initial;
+    gap: 86px;
   }
 }
 
@@ -68,6 +71,10 @@
     line-height: 20px;
     text-align: right;
     gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 

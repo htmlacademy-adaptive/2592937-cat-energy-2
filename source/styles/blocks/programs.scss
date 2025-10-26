@@ -177,6 +177,8 @@
     left: auto;
     right: -39px;
     top: 60px;
+
+    @include icon-bg("../icons/cat-pro-tablet.svg");
   }
 
   @media (min-width: $desktop-width) {
