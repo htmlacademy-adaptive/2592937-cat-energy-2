@@ -52,7 +52,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 73px;
+    gap: 75px;
   }
 }
 
@@ -89,7 +89,7 @@
       font-size: 280px;
       line-height: 280px;
       color: #f2f2f2;
-      width: 135px;
+      width: 112px;
       text-align: center;
       z-index: -1;
       top: -38px;
